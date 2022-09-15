@@ -347,7 +347,10 @@ text-align: center;
 
 .team-social{
   display: flex;
- 
+}
+
+.social-item{
+  
 }
 
 .icon-shape:hover{
