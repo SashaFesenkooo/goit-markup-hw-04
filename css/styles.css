@@ -150,7 +150,7 @@ p{
 }
 
 .copy {
-  display: block;
+  display: inline-flex;
   padding-top: 32px;
   padding-bottom: 32px;
 
@@ -169,7 +169,7 @@ text-align: center;
 
 .hero {
   background-color: var(--headfoot-color);
-  background-image: url(../images/header.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/header.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -234,6 +234,33 @@ text-align: center;
 
 .post .post-link:not(:last-child) {
   margin-right: 30px;
+}
+
+.post-link::before{
+  display: block;
+  content: '';
+  background-color: var(--fsection-color);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  height: 120px;
+  outline: 1px solid red;
+}
+
+.icon-antenna::before{
+  background-image: url();
+}
+
+.icon-clock::before{
+  background-image: url();
+}
+
+.icon-diagmam::before{
+  background-image: url();
+}
+
+.icon-astronaut::before{
+  background-image: url();
 }
 
 .post-text {
@@ -312,6 +339,23 @@ text-align: center;
   display: block;
   margin-bottom: 30px;
 }
+
+.team-social{
+  display: flex;
+  justify-content: space-around;
+  
+}
+
+.icon-shape:hover{
+  background-color: var(--logo-color);
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+
 
                                     /* Footer */
 
