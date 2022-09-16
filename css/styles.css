@@ -443,6 +443,10 @@ text-align: center;
   color: var(--nav-color);
 }
 
+.content-link:not(:last-child){
+  margin-bottom: 9px;
+}
+
 .text {
   color: var(--nav-color);
   text-decoration: none;
@@ -451,7 +455,6 @@ text-align: center;
   line-height: 1.7;
 
   display: inline-block;
-  margin-bottom: 9px;
 }
 
 .text:hover,
