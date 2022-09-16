@@ -256,18 +256,6 @@ text-align: center;
   margin-right: 30px;
 }
 
-.post-link::before{
-  display: block;
-  content: '';
-  background-color: var(--fsection-color);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-  height: 120px;
-  margin-bottom: 30px;
-  outline: 1px solid black;
-}
-
 .post-text {
   color: var(--second-font-color);
   font-size: 14px;
@@ -275,6 +263,26 @@ text-align: center;
   text-align: left;
 }
 
+.feature{
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.feuture-list{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  background-color: var(--fsection-color);
+  width: calc(100% - 90px / 4);
+  height: 120px;
+  margin-right: 30px;
+  border-radius: 4px;
+}
+
+.feuture-list:last-child{
+  margin-right: 0;
+}
                                   /* Two Section */
 
 .section-title {
@@ -337,7 +345,7 @@ text-align: center;
   font-size: 16px;
   line-height: 1.18;
 
-  padding-bottom: 30px;
+  margin-bottom: 16px;
 }
 
 .img {
@@ -347,24 +355,35 @@ text-align: center;
 
 .team-social{
   display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.icon-shape{
+  display: flex;
+  justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
 }
 
 .social-item{
-  
+  margin-bottom: 30px;
 }
 
 .icon-shape:hover{
   background-color: var(--logo-color);
-  width: 44px;
-  height: 44px;
   border-radius: 50%;
-  display: flex;
-  justify-content: center;
 }
 
 .shape-item{
   fill: var(--icons-color)
 }
+.icon-shape:hover .shape-item{
+  fill: var(--nav-color);
+}
+
+
 
                                 /* Four section */
 .clients{
@@ -372,9 +391,7 @@ text-align: center;
 }
 
 .clients-list{
-  display: flex;
-  border: 1px solid var(--icons-color);
-  border-radius: 4px;
+  width: calc(100% - 150px / 6);
   margin-right: 30px;
 }
 
@@ -384,28 +401,22 @@ text-align: center;
 
 .clients-link{
   display: flex;
-    width: 170px;
-    height: 92px;
-    justify-content: center;
-    align-items: center;
-    fill:var(--icons-color);
+  width: 170px;
+  height: 92px;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--icons-color);
+  border-radius: 4px;
 }
 
 .icon-logo{
-  display: flex;
-    width: 106px;
-    height: 60px;
-    justify-content: center;
-    align-items: center;
+  display: block;
+  fill: var(--icons-color);
 }
 
-.icon-logo:hover{
+.clients-link:hover .icon-logo{
   fill: var(--logo-color);
 }
-
-
-
-
                                     /* Footer */
 
 .logo.secondary {
