@@ -581,11 +581,13 @@ text-align: center;
   margin-right: 30px;
 }
 
-.project .visit {
+.visit {
   text-decoration: none;
+  display: block;
 }
 
-.visit:hover{
+.project-link .visit:hover,
+.project-link .visit:focus{
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
       0px 4px 4px rgba(0, 0, 0, 0.06),
       1px 4px 6px rgba(0, 0, 0, 0.16);
