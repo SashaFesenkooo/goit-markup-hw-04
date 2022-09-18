@@ -213,7 +213,7 @@ text-align: center;
   padding: 10px 32px;
   min-width: 216px;
 
-  background-color: var(--logo-secondary-color);
+  background-color: var(--logo-color);
   color: var(--nav-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
@@ -227,7 +227,7 @@ text-align: center;
 
 .btn:hover,
 .btn:focus {
-  background-color: var(--logo-color);
+  background-color: var(--logo-secondary-color);
 }
 
                                   /* One Section */
